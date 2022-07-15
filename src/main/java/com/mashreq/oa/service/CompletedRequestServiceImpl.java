@@ -2,6 +2,7 @@ package com.mashreq.oa.service;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
@@ -74,7 +75,7 @@ public class CompletedRequestServiceImpl implements CompletedRequestService {
 			{
 				e.printStackTrace();
 				logger.info("Exception in getListData() ::: "+e.getCause());
-				return null;
+				return Collections.emptyList();
 			}
 			
 		}
@@ -198,7 +199,7 @@ public class CompletedRequestServiceImpl implements CompletedRequestService {
 				if(compreq.getInitiatorDate()!=null) {
 				SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yyyy");
 				String convertedDate=sdf.format(compreq.getInitiatorDate());
-				logger.info("Converted Format is:::"+convertedDate);
+				logger.info("Converted Format is: "+convertedDate);
 				compreq.setDisplayInitiatorDate(convertedDate);	
 				}
 			}
@@ -209,7 +210,7 @@ public class CompletedRequestServiceImpl implements CompletedRequestService {
 		{
 			//e.printStackTrace();
 			logger.info("Exception raised in completedRequests in service::" +e.getCause());
-			return null;
+			return Collections.emptyList();
 		}
 	
 }
@@ -224,7 +225,7 @@ public class CompletedRequestServiceImpl implements CompletedRequestService {
 		}catch(Exception e)
 		{
 			logger.info("Exception raised in generateExcel() in completedrequestservice::"+e.getCause());
-			return null;
+			return Collections.emptyList();
 		}
 	}
 
@@ -239,7 +240,7 @@ public class CompletedRequestServiceImpl implements CompletedRequestService {
 		catch(Exception e)
 		{
 			logger.info("Exception raised in generatedPdf() in completedrequestservice::"+e.getCause());
-			return null;
+			return Collections.emptyList();
 		}
 	}
 

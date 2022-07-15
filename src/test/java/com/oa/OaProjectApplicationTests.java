@@ -10,8 +10,8 @@ class OaProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
-		String str="";
-		assertEquals("", str); 
+		String str="check";
+		assertEquals("check", str); 
 	}
 
 }
