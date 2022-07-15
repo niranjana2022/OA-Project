@@ -2,8 +2,6 @@ package com.mashreq.oa.service;
 
 import java.util.List;
 
-import org.springframework.web.multipart.MultipartFile;
-
 import com.mashreq.oa.entity.PaymentData;
 import com.mashreq.oa.entity.PaymentSearchInput;
 

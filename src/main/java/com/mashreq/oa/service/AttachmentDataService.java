@@ -2,8 +2,6 @@ package com.mashreq.oa.service;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-
 import com.mashreq.oa.entity.AttachmentData;
 //import com.mashreq.oa.entity.ManagementCompany;
 

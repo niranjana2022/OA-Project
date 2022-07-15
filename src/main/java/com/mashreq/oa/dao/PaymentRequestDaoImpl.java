@@ -1,10 +1,7 @@
 package com.mashreq.oa.dao;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 //import org.apache.commons.lang3.StringUtils;
 import org.slf4j.LoggerFactory;
@@ -12,15 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-
 import com.mashreq.oa.entity.PaymentData;
 import com.mashreq.oa.entity.PaymentSearchInput;
-
 
 import ch.qos.logback.classic.Logger;
 
@@ -29,8 +22,8 @@ public class PaymentRequestDaoImpl implements PaymentDataDao{
 	
 	private static final Logger logger = (Logger) LoggerFactory.getLogger(PaymentRequestDaoImpl.class);
 	
-	@Autowired
-	private NamedParameterJdbcTemplate namedParameterJDBCTemplate;
+//	@Autowired
+//	private NamedParameterJdbcTemplate namedParameterJDBCTemplate;
 	
 	@Autowired
 	private JdbcTemplate jdbcTemplate;

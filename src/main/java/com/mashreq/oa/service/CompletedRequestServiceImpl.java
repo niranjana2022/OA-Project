@@ -3,9 +3,7 @@ package com.mashreq.oa.service;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.LoggerFactory;
@@ -15,7 +13,6 @@ import org.springframework.stereotype.Service;
 
 import com.mashreq.oa.dao.CompletedRequestDao;
 import com.mashreq.oa.entity.AttachmentData;
-import com.mashreq.oa.entity.CompletedRequestData;
 import com.mashreq.oa.entity.CompletedRequestInput;
 import com.mashreq.oa.entity.PaymentData;
 

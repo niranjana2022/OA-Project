@@ -2,7 +2,6 @@ package com.mashreq.oa.dao;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +11,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.mashreq.oa.entity.AttachmentData;
-import com.mashreq.oa.entity.CompletedRequestData;
 import com.mashreq.oa.entity.PaymentData;
 
 import ch.qos.logback.classic.Logger;
